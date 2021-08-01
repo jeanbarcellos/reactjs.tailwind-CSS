@@ -1,10 +1,10 @@
 import React from 'react'
-import UtilityFirstDemo from './demos/UtilityFirstDemo'
+import ResponsiveDesignDemo from './demos/ResponsiveDesignDemo'
 
 const App = () => {
   return (
     <div className='App'>
-      <UtilityFirstDemo />
+      <ResponsiveDesignDemo />
     </div>
   )
 }
