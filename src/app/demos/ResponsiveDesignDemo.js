@@ -14,7 +14,11 @@ const ResponsiveDesignDemo = () => {
           </div>
           <div class='p-8'>
             <div class='uppercase tracking-wide text-sm text-indigo-500 font-semibold'>Case study</div>
-            <a href='#' class='block mt-1 text-lg leading-tight font-medium text-black hover:underline'>
+            <a
+              href='http://localhost:3000'
+              rel='noopener noreferrer'
+              class='block mt-1 text-lg leading-tight font-medium text-black hover:underline'
+            >
               Finding customers for your new business
             </a>
             <p class='mt-2 text-gray-500'>

@@ -1,10 +1,10 @@
 import React from 'react'
-import BuildAnythingDemo from './demos/BuildAnythingDemo'
+import ColorsDoc from './doc/ColorsDoc'
 
 const App = () => {
   return (
     <div className='App'>
-      <BuildAnythingDemo />
+      <ColorsDoc />
     </div>
   )
 }
