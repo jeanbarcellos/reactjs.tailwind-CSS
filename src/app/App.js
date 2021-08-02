@@ -1,10 +1,10 @@
 import React from 'react'
-import ResponsiveDesignDemo from './demos/ResponsiveDesignDemo'
+import BuildAnythingDemo from './demos/BuildAnythingDemo'
 
 const App = () => {
   return (
     <div className='App'>
-      <ResponsiveDesignDemo />
+      <BuildAnythingDemo />
     </div>
   )
 }
