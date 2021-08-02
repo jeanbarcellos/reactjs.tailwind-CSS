@@ -36,7 +36,7 @@ const ColorsDoc = () => {
       <div className='grid grid-cols-1 gap-8'>
         {colors.map(color => {
           return (
-            <div>
+            <div key={color}>
               <div className='flex flex-col space-y-3 sm:flex-row text-xs sm:space-y-0 sm:space-x-4'>
                 <div className='w-80 flex-shrink-0'>
                   <div className='h-10 flex flex-col justify-center'>
@@ -49,7 +49,7 @@ const ColorsDoc = () => {
                 <div className='min-w-0 flex-1 grid grid-cols-5 2xl:grid-cols-10 gap-x-4 gap-y-3 2xl:gap-x-2'>
                   {numbers.map(number => {
                     return (
-                      <div className='space-y-1.5'>
+                      <div className='space-y-1.5' key={`${color}-${number}`}>
                         <div
                           className={`bg-${color}-${number} h-24 w-full rounded ring-1 ring-inset ring-black ring-opacity-0`}
                         ></div>

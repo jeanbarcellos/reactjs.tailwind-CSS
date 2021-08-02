@@ -9,25 +9,25 @@ const spacing = [
 const SacingScaleDoc = () => {
   return (
     <div className='mb-36'>
-      <div class='pb-10 border-b border-gray-200 mb-10'>
+      <div className='pb-10 border-b border-gray-200 mb-10'>
         <div>
-          <h1 class='inline-block text-3xl font-extrabold text-gray-900 tracking-tight'>Customizing Spacing</h1>
+          <h1 className='inline-block text-3xl font-extrabold text-gray-900 tracking-tight'>Customizing Spacing</h1>
         </div>
-        <p class='mt-1 text-lg text-gray-500'>Customizing the default spacing and sizing scale for your project.</p>
+        <p className='mt-1 text-lg text-gray-500'>Customizing the default spacing and sizing scale for your project.</p>
       </div>
       <table>
         <thead>
           <tr>
             <th>Name</th>
-            <th class='hidden sm:table-cell'>
-              <span class='sr-only'>Preview</span>
+            <th className='hidden sm:table-cell'>
+              <span className='sr-only'>Preview</span>
             </th>
           </tr>
         </thead>
         <tbody>
           {spacing.map(number => {
             return (
-              <tr className='border-b'>
+              <tr className='border-b' key={`spacing-${number}`}>
                 <td>{number}</td>
                 <td className='hidden sm:table-cell'>
                   <div className={`h-10 bg-cyan-400 w-${number}`}></div>
