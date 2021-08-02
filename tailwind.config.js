@@ -1,3 +1,11 @@
+const beackPointsCustom = {
+  sm: '600px',
+  md: '960px',
+  lg: '1280px',
+  xl: '1920px',
+  print: { raw: 'print' }
+}
+
 const colorsCustom = {
   transparent: 'transparent',
   current: 'currentColor',
@@ -429,13 +437,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
-    screens: {
-      sm: '600px',
-      md: '960px',
-      lg: '1280px',
-      xl: '1920px',
-      print: { raw: 'print' }
-    },
+    screens: beackPointsCustom,
     colors: colorsCustom,
     spacing: spacingsCustom,
     backgroundColor: theme => theme('colors'),
