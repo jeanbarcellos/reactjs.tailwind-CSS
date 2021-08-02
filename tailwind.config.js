@@ -437,7 +437,20 @@ module.exports = {
       print: { raw: 'print' }
     },
     colors: colorsCustom,
-    spacing: spacingsCustom
+    spacing: spacingsCustom,
+    backgroundColor: theme => theme('colors'),
+    borderColor: theme => ({
+      ...theme('colors'),
+      DEFAULT: theme('colors.gray.200', 'currentColor')
+    }),
+    gradientColorStops: theme => theme('colors'),
+    placeholderColor: theme => theme('colors'),
+    ringColor: theme => ({
+      DEFAULT: theme('colors.blue.500', '#3b82f6'),
+      ...theme('colors')
+    }),
+    ringOffsetColor: theme => theme('colors'),
+    textColor: theme => theme('colors')
   },
   variants: {
     extend: {}
