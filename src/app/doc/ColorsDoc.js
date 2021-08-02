@@ -25,7 +25,7 @@ const numbers = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 'A100', 'A200'
 
 const ColorsDoc = () => {
   return (
-    <div className=''>
+    <div className='mb-36'>
       <div className='pb-10 border-b border-gray-200 mb-10'>
         <div>
           <h1 className='inline-block text-3xl font-extrabold text-gray-900 tracking-tight'>Customizing Colors</h1>
@@ -38,7 +38,7 @@ const ColorsDoc = () => {
           return (
             <div>
               <div className='flex flex-col space-y-3 sm:flex-row text-xs sm:space-y-0 sm:space-x-4'>
-                <div className='w-32 flex-shrink-0'>
+                <div className='w-80 flex-shrink-0'>
                   <div className='h-10 flex flex-col justify-center'>
                     <div className='text-sm font-semibold text-gray-900'>{color}</div>
                     <div>
@@ -51,7 +51,7 @@ const ColorsDoc = () => {
                     return (
                       <div className='space-y-1.5'>
                         <div
-                          className={`bg-${color}-${number} h-10 w-full rounded ring-1 ring-inset ring-black ring-opacity-0`}
+                          className={`bg-${color}-${number} h-24 w-full rounded ring-1 ring-inset ring-black ring-opacity-0`}
                         ></div>
                         <div className='px-0.5 md:flex md:justify-between md:space-x-2 2xl:space-x-0 2xl:block'>
                           <div className='w-6 font-medium text-gray-900'>{number}</div>
